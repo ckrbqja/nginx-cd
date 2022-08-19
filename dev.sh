@@ -17,5 +17,5 @@ else
   TARGET_PORT=$BLUE_PORT
 fi
 
-
-echo "sed -e 's/3000/$TARGET_PORT/g' ./nginx/default.conf > /dev/null"
+#포트 변경
+echo "sed -i 's/localhost:..../localhost:$TARGET_PORT/g' ./nginx/default.conf"
