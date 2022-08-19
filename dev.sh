@@ -16,3 +16,6 @@ else
   echo "> $BLUE_PORT 포트를 할당합니다."
   TARGET_PORT=$BLUE_PORT
 fi
+
+
+echo "sed -e 's/3000/$TARGET_PORT/g' ./nginx/default.conf > /dev/null"
